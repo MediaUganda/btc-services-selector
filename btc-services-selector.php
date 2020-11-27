@@ -17,6 +17,7 @@ add_action( 'wp_enqueue_scripts', 'btc_reginaldp_wp_enqueue_scripts' );
 
 function btc_reginaldp_wp_enqueue_scripts() {
 
+    // Data for First select
     $first_array = array(
         array(
             'name' => 'Fruit',
@@ -36,6 +37,7 @@ function btc_reginaldp_wp_enqueue_scripts() {
         ),
     );
 
+    // Data for Second select
     $second_array = array(
         array(
             'name' => 'Banana',
