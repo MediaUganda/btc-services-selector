@@ -6,13 +6,13 @@ var $select1 = $( '[data-id="field_e5ztz2_51283"]' ),
     $select2 = $( '[data-id="field_u2lkmz_51283"]' ),
     $options = $select2.find( 'option' );
 
-$.each(first_array, function (i, item) {
+first_array.forEach(element => {
     $select1.append($('<option>', { 
-        value: i.id,
-        text : i.name 
+        value: element.id,
+        text : element.name 
     }));
 });
-
+    
 $.each(second_array, function (i, item) {
     $select2.append($('<option>', { 
         value: i.id,
